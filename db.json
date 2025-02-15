@@ -1,0 +1,13 @@
+{
+    "users":[
+        {
+            "id":1,
+            "name":"alibek",
+            "city":"bishkek",
+            "phone":"0550036883",
+            "company":"metalabs",
+            "email":"alibek@mail.ru",
+            "password":"qwerty"
+        }
+    ]
+}

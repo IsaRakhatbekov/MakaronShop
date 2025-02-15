@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Собрать набор</title>
-    <link rel="stylesheet" href="./kubanychbek.css">
-    <link rel="icon" href="./images/iconLogo.svg">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
 </head>
 <body>
     <header class="header">
@@ -295,58 +294,45 @@
                 </svg>
               </span>
             </a>
+            <button class="btn__logout">выйти</button>
+            <p class="username"></p>
           </nav>
         </div>
       </header>
-
-      <main class="main" id="main">
-
-                <div class="topName">
-                    <a href="#">Главная ></a><a href="#"> Собрать набор ></a><a href="#"> Выбрать количество</a>
-                </div>
-                <div class="botName">
-                    <h1>Выберите количество</h1>
-                </div>
-
-
-                    <div class="itemMain">
-                        <div class="itemWrapper">
-                            <div class="itemHolder">
-                                <img class="ItemPhoto" src="./images/macaron1og.png" alt="macaron">
-                                <p class="ItemName">Набор из 6 макарон</p>
-                                <p class="ItemPrice">350 руб.</p>
-                            </div>
-                            <div class="itemHolder">
-                                <img class="ItemPhoto" src="./images/macaron12p.png" alt="macaron">
-                                <p class="ItemName">Набор из 12 макарон</p>
-                                <p class="ItemPrice">700 руб.</p>
-                            </div>
-                            <div class="itemHolder">
-                                <img class="ItemPhoto" src="./images/macaron24p.png" alt="macaron">
-                                <p class="ItemName">Набор из 24 макарон</p>
-                                <p class="ItemPrice">1400 руб.</p>
-                            </div>
-                            <div class="itemHolder">
-                                <img class="ItemPhoto" src="./images/macaron48p.png" alt="macaron">
-                                <p class="ItemName">Набор из 48 макарон</p>
-                                <p class="ItemPrice">2800 руб.</p>
-                            </div>
-                            <div class="itemHolder">
-                                <img class="ItemPhoto" src="./images/macaron40m.png" alt="macaron">
-                                <p class="ItemName">Набор из 40 макарон<br>в круглой коробке</p>
-                                <p class="ItemPrice">3000 руб.</p>
-                            </div>
-                            <div class="itemHolder">
-                                <img class="ItemPhoto" src="./images/macaron70.png" alt="macaron">
-                                <p class="ItemName">Набор из 70 макарон<br>в круглой коробке</p>
-                                <p class="ItemPrice">5000 руб.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-
+      <main>
+        <section class="register">
+            <h2>Получите доступ к оптовым ценам</h2>
+            <p>Пройдите регистрацию</p>
+            <form>
+                <label>
+                    Ваше имя
+                    <input type="text" placeholder="name">
+                </label>
+                <label>
+                    Город
+                    <input type="text" placeholder="">
+                </label>
+                <label>
+                    Ваш телефон
+                    <input type="text" placeholder="">
+                </label>
+                <label>
+                    Компания
+                    <input type="text" placeholder="">
+                </label>
+                <label>
+                    E-mail
+                    <input type="text" placeholder="">
+                </label>
+                <label>
+                    Придумайте пароль
+                    <input type="text" placeholder="">
+                </label>
+                <button>Отправить заявку на регистрацию</button>
+            </form>
+        </section>
       </main>
+
 
       <footer class="footer">
         <div class="container">
@@ -516,12 +502,10 @@
           </div>
         </div>
       </footer>
-    </body>
-  </html>
   
-    
 
 
 
+    <script type="module" src="register.js"></script>
 </body>
 </html>
