@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.popularPacks {
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    color: #292929;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36.57px;
+    margin-bottom: 40px;
+}
+
+.popularPacks h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36.57px;
+    margin-bottom: 42px;
+    text-align: center;
+}
+
+.popularPacks button {
+    margin: 0 auto;
+    width: 293px;
+    height: 52px;
+    border-radius: 3px;
+    border: #4E9DD3 1.5px solid;
+    background-color: #fff;
+    font-weight: 600;
+    line-height: 17.07px;
+    padding: 16px 49px;
+    margin-bottom: 85px;
+}
+.view{
+    width: 370px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 3px 3px 0 0;
+    object-fit: cover;
+}
+
+.packCard {
+    width: 370px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid rgba(237, 237, 240, 1);
+}
+.packBox {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 35px;
+    column-gap: 30px;
+    row-gap: 35px;
+}
+.center {
+    padding: 21px 21px 37px;
+}
+.center h4 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.94px;
+    margin-bottom: 14px;
+}
+.center p {
+    line-height: 17.05px;
+    color: rgba(41, 41, 41, 1);
+}
+.btm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(237, 237, 240, 1);
+}
+
+.price {
+    padding-left: 21px;
+    color: rgba(231, 66, 106, 1);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.94px;
+}
+.btmRight {
+    padding: 0 25px 0 18px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    color: black;
+    border-left: 1px solid rgba(237, 237, 240, 1);
+}
+
+.news {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    margin-bottom: 85px;
+}
+.news button {
+    width: 189px;
+    height: 52px;
+    border-radius: 3px;
+    border: 1.5px solid #4E9DD3;
+    padding: 17px 48px;
+    font-weight: 600;
+    line-height: 17.07px;
+    color: black;
+    background-color: #fff;
+}
+.swiper {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 3px;
+}
+.swiperCard {
+    width: 370px;
+    height: 420px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid rgba(237, 237, 240, 1);
+}
+.swiperCard img {
+    width: 370px;
+    height: 210px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.commit {
+    padding: 20px 20px 0;
+}
+.commit h4 {
+    margin: 10px 0;
+    color: rgba(41, 41, 41, 1);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.94px;
+}
+.data {
+    font-size: 14px;
+    line-height: 17.07px;
+    color: rgba(150, 150, 150, 1);
+}
+.info {
+    color: #292929;
+    line-height: 17.05px;
+}
+.pageLoop {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    left: 10px;
+}
+.pageLoop div {
+    width: 12px;
+    height: 12px;
+    border: 1px solid rgba(229, 229, 229, 1);
+    margin-bottom: 3px;
+}
+.ourWork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.ourCards {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+.ourCards .card {
+    width: 270px;
+    height: 400px;
+}
+.card img {
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.card h4 {
+    margin: 30px 0 10px;
+    color: #292929;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.94px;
+}
+.card p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.05px;
+    color: rgba(41, 41, 41, 1);
+}

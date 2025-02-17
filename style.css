@@ -67,6 +67,10 @@
   justify-content: center;
 }
 
+.predloj{
+  color:blue;
+}
+
 /* FOOTER STYLES */
 
 .footer {
@@ -153,3 +157,4 @@
   background-color: #fff;
   border-radius: 100%;
 }
+
