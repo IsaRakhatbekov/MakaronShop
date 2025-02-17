@@ -1,9 +1,558 @@
 @import "../../style.css";
 @import "../../global.css";
 
-.main{
+.main {
+      background: rgba(0, 0, 0, 0.027);
+}
+
+.inner_header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 34px;
+}
+
+.nav_inner {
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 27px;
+      text-align: center;
+      color: rgba(41, 41, 41, 0.46);
+}
+
+.nav_inner span {
+      color: rgba(0, 0, 255, 0.582);
+}
+
+h2 {
+      font-size: 30px;
+      line-height: 36px;
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 10px;
+}
+
+.products_count {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: rgba(41, 41, 41, 1);
+}
+
+.inner {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 34px;
+}
+
+.sides {
+      display: flex;
+      gap: 30px;
+}
+
+.right_side {
+      width: 670px;
+}
+
+.products_list {
       width: 100%;
       display: flex;
       flex-direction: column;
-      background: #000;
+      border: 1px solid rgba(237, 237, 240, 1);
+      border-radius: 5px;
+      background: white;
+}
+
+.product_in {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      padding: 20px 32px 17px 17px;
+      position: relative;
+      border-bottom: 1px solid rgba(237, 237, 240, 1);
+}
+
+.product_in_img {
+      width: 80px;
+      height: 80px;
+      margin-right: 15px;
+}
+
+.product_in_desc {
+      display: flex;
+      flex-direction: column;
+}
+
+.product_in_title {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 17px;
+      color: rgba(41, 41, 41, 1);
+      margin-bottom: 8px;
+}
+
+.product_in_counts {
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 400;
+      color: rgba(41, 41, 41, 1);
+}
+
+.product_in_skidka {
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 600;
+      color: rgba(231, 66, 106, 1);
+      margin-top: 10px;
+}
+
+.counter_btns {
+      position: absolute;
+      display: flex;
+      width: 74px;
+      height: 20px;
+      justify-content: space-between;
+      left: 387px;
+}
+
+.counter_button {
+      width: 20px;
+      height: 23px;
+      border-radius: 3px;
+      border: 1px solid rgba(41, 41, 41, 0.1);
+}
+
+.product_in_fnols {
+      position: absolute;
+      right: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+}
+
+.product_in_price {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+}
+
+.product_in_price span {
+      color: rgba(231, 66, 106, 1);
+}
+
+.delete_product_in {
+      position: absolute;
+      top: 5px;
+      right: 11px;
+}
+
+.final_price {
+      display: flex;
+      justify-content: space-between;
+      padding: 22px 26px;
+}
+
+.fnp_p {
+      color: rgba(41, 41, 41, 1);
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 400;
+}
+
+.price_red {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 21px;
+      color: rgba(231, 66, 106, 1);
+}
+
+.skidka {
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 600;
+      text-decoration: line-through;
+      color: rgba(41, 41, 41, 0.596);
+}
+
+.banner {
+      margin-top: 20px;
+      margin-bottom: 20px;
+}
+
+.left_side {
+      width: 473px;
+}
+
+.req_zakaz {
+      position: relative;
+      width: 100%;
+      height: 369px;
+      background: white;
+      border: 1px solid rgba(237, 237, 240, 1);
+      border-radius: 5px;
+      padding: 30px;
+}
+
+.heading {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 21px;
+}
+
+.options {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-bottom: 26px;
+}
+
+.one_opt {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 400;
+      color: rgba(41, 41, 41, 1);
+}
+
+hr {
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 0.2px;
+      color: rgba(237, 237, 240, 0.377);
+}
+
+.toPay {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 50px;
+}
+
+.k_op {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      color: rgba(41, 41, 41, 1);
+}
+
+.toPay_price {
+      font-size: 18px;
+      line-height: 21px;
+      font-weight: 600;
+      color: rgba(41, 41, 41, 1);
+}
+
+.promocode {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.promocode p {
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 400;
+}
+
+.inps {
+      display: flex;
+      align-items: center;
+}
+
+.promo_input {
+      width: 180px;
+      padding: 10px 12px;
+      font-size: 16px;
+      font-weight: 400;
+      color: rgba(41, 41, 41, 1);
+      border: 1px solid rgba(237, 237, 240, 1);
+}
+
+.promo_button {
+      font-size: 14px;
+      width: 120px;
+      padding: 12px 12px;
+      background: rgba(231, 66, 106, 1);
+      color: white;
+}
+
+.sub_btn_cont {
+      margin-top: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+}
+
+.sub_btn {
+      width: 254px;
+      height: 50px;
+      background: rgba(231, 66, 106, 1);
+      font-size: 16px;
+      color: rgba(255, 255, 255, 1);
+}
+
+
+.zakaz_form{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+.z_f_heading{
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 36px;
+      color: rgba(41, 41, 41, 1);
+      margin-top: 40px;
+      margin-bottom: 7px;
+}
+.zakaz_heading_b{
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: center;
+      color: rgba(41, 41, 41, 0.8);
+      margin-bottom: 35px;
+}
+.zakaz_input_cont{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 24px;
+}
+.zakaz_input_cont label{
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      color: rgba(41, 41, 41, 1);
+}
+.zakaz_input_cont input{
+      width: 328px;
+      height: 50px;
+      color: rgba(41, 41, 41, 1);
+      font-size: 16px;
+      border: 1px solid rgba(237, 237, 240, 1);
+      padding: 17px 14px;
+}
+
+.dostavka{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+}
+.cont_heading{
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      color: rgba(41, 41, 41, 1);
+      margin-bottom: 11px;
+}
+.dostavka_types{
+      display: flex;
+      justify-content: space-between;
+}
+.red_b{
+      border: 1px solid rgba(231, 66, 106, 1) !important;     
+}
+
+.one_type{
+      width: 328px;
+      height: 78px;
+      border-radius: 5px;
+      border: 1px solid rgba(237, 237, 240, 1);
+      padding-left: 17px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+}
+.one_type svg{
+      width: 54px;
+      height: 54px;
+}
+.type_txt{
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 17px;
+}
+.type_txt :last-child{
+      color: rgba(231, 66, 106, 1);
+}
+
+.coments_label{
+      margin-top: 24px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      color: rgba(41, 41, 41, 1);
+}
+.coments_label textarea{
+      padding: 12px 14px;
+      width: 100%;
+      height: 76px;
+      font-size: 16px;
+      font-weight: 400;
+      color: rgba(41, 41, 41, 1);
+      border: 1px solid rgba(237, 237, 240, 1);
+}
+.large textarea{
+      height: 108px;
+}
+
+.pay_type{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 24px;
+      gap: 21px;
+      margin-bottom: 24px;
+}
+.pay_t_heading{
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      color: rgba(41, 41, 41, 1);
+}
+.labels{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+}
+.labels label{
+      display: flex;
+      gap: 11px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 17px;
+}
+.labels input{
+      width: 18px;
+      height: 18px;
+      border: 1px solid rgba(41, 41, 41, 0.1);
+}
+
+.finl_price_b{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0px;
+      border-top: 1px solid rgba(41, 41, 41, 0.5);
+      border-bottom: 1px solid rgba(41, 41, 41, 0.5);
+}
+.f_p_txt{
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      color: rgba(41, 41, 41, 0.7);
+}
+.f_p_price{
+      font-size: 18px;
+      font-weight: 600;
+      color: rgba(231, 66, 106, 1);
+}
+.qreq_btn_b{
+      margin-top: 30px;
+      margin-bottom: 18px;
+      width: 254px;
+      height: 50px;
+      color: white;
+      font-size: 14px;
+      line-height: 17px;
+      border-radius: 3px;
+      font-weight: 600;
+      background: rgba(231, 66, 106, 1);
+}
+
+.conf{
+      font-weight: 400;
+      font-size: 11px;
+      color: rgba(41, 41, 41, 0.5);
+      margin-bottom: 43px;
+}
+.largeHeading{
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 36px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 36px;
+}
+.rec_prods{
+      width: 100%;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+}
+.on_rec_prod{
+      position: relative;
+      width:271px;
+      height:413px;
+      border-radius: 5px;     
+      border: 1px solid rgba(237, 237, 240, 1);
+}
+.img_rec_prod{
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+}
+
+.desc{
+      padding: 20px 22px;
+}
+.prod_title{
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 21px;
+      margin-bottom: 10px;
+}
+.ptod_desc{
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 400;
+      color: rgba(41, 41, 41, 0.8);
+}
+.contr{
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid rgba(237, 237, 240, 1);
+}
+.prod_preices{
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgba(231, 66, 106, 1);
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 21px;
+      border-right: 1px solid rgba(237, 237, 240, 1);
+}
+.v_cor{
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 }
